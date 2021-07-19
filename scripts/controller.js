@@ -60,6 +60,7 @@ formobj.addEventListener("submit",(e)=>{
 
         //clear the form after updating the city
         formobj.reset();
+        formobj.childNodes[1].blur();
     }
     
 })
