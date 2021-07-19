@@ -1,4 +1,4 @@
-const APIkey = '08AeeU3Qr3lBgB1I6b8t12PsMsHR0dNP';
+const APIkey = '3wdQJ7xXaPGVd0Fp0bsKHplGlDzIMMcp';
 
 //get location
 const getCity = async (city)=>{
