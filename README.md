@@ -3,7 +3,7 @@ just made a Minimal Weather web-App using Rest API (Accu) and Vanilla Js.
 
 ## Link
 
-[Worldtime](https://brijrajparmar27.github.io/Weather/)
+[Weather](https://brijrajparmar27.github.io/Weather/)
 
 <br>
 
