@@ -5,7 +5,7 @@ const card = document.querySelector(".card");
 
 const img = document.querySelector(".card .img");
 const icon = document.querySelector(".icon img");
-
+const loader = document.querySelector("#loader");
 //update the UI with deatils
 const updateUI = (data)=>{
 
@@ -54,8 +54,13 @@ formobj.addEventListener("submit",(e)=>{
     //do not fire on empty submits
     if(city !== "")
     {
+        loader.classList.remove("d-none");
+        card.classList.add("d-none");
         updateCity(city)
-        .then(data=>updateUI(data))
+        .then(data=>{
+            loader.classList.add("d-none");
+            updateUI(data);
+        })
         .catch(err=>console.log(err));
 
         //clear the form after updating the city
